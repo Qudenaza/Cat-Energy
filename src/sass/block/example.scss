@@ -1,0 +1,91 @@
+.example {
+  padding: 2rem 2rem 3rem 2rem;
+  background: #f2f2f2;
+
+  &__title {
+    margin: 2px 0 2.7rem 0;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    padding-top: 0.7rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    list-style: none;
+    font-size: 2.4rem;
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-radius: 2px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 2rem;
+      height: 1px;
+      background: #cdcdcd;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &:first-child {
+      padding-left: 4.2rem;
+      padding-right: 4.2rem;
+    }
+
+    &:last-child {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  &__sign {
+    position: absolute;
+    width: 6rem;
+    left: 3rem;
+    top: 4.5rem;
+    text-align: center;
+    line-height: 1.1;
+    font-family: $font-secondary;
+    font-size: 1.2rem;
+    color: #808080;
+    font-weight: inherit;
+    text-transform: none;
+    background: #f2f2f2;
+  }
+
+  &__cost {
+    margin-left: 4.7rem;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    padding-top: 3.3rem;
+  }
+
+  &__image {
+    margin-left: -2rem;
+    margin-bottom: 2.8rem;
+  }
+
+  &__range {
+  }
+}

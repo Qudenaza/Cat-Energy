@@ -1,0 +1,40 @@
+.social {
+  &__item {
+    display: inline-block;
+    margin-right: 3.5rem;
+    list-style: none;
+  }
+
+  &__link {
+    display: block;
+
+    &:hover path {
+      fill: $color-primary;
+    }
+
+    &:active path {
+      fill: #666666;
+      opacity: 0.5;
+    }
+
+    &--vk {
+      width: 2.2rem;
+      height: 1.2rem;
+    }
+
+    &--insta {
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+
+    &--fb {
+      width: 1rem;
+      height: 1.9rem;
+    }
+  }
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}

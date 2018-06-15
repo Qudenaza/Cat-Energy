@@ -1,0 +1,29 @@
+.authors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0 2rem 0;
+
+  &__name {
+    margin-top: 5px;
+    font-family: $font-secondary;
+    font-size: 1.6rem;
+    color: #666666;
+  }
+
+  &__link {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin: 3px -7px 0 0;
+
+    &:hover path {
+      fill: $color-primary;
+    }
+
+    &:active path {
+      fill: #656565;
+      opacity: 0.5;
+    }
+  }
+}

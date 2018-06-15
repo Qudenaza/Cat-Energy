@@ -1,0 +1,30 @@
+.contacts {
+  padding-top: 3.2rem;
+
+  &__title {
+    width: 30rem;
+    margin-right: 1.7rem;
+    font-size: 1.6rem;
+    font-weight: inherit;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  &__map {
+    width: 100%;
+    height: 37rem;
+    background: url("../img/map-pin.png") no-repeat center 43%, url("../img/bg-map-mobile@1x.png");
+    background-size: 20%, 100%;
+  }
+
+  &__wrapper {
+    display: flex;
+    padding: 0 2rem 2.7rem 2rem;
+    justify-content: space-between;
+  }
+
+  &__address {
+    margin-top: 5px;
+    font-weight: inherit;
+  }
+}

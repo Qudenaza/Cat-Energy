@@ -1,0 +1,34 @@
+.intro {
+  margin-top: 1.5rem;
+  padding-top: 2.4rem;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: inherit;
+    text-align: center;
+    line-height: 1.1;
+    letter-spacing: 0.04rem;
+    color: #ffffff;
+  }
+
+  &__descr {
+    display: block;
+    margin-top: 1.8rem;
+    margin-bottom: 2.6rem;
+    font-size: 1.4rem;
+    font-weight: inherit;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__image {
+    display: block;
+    margin: 0 0 2px 2rem;
+  }
+
+  &__button {
+    margin: 0 2rem;
+  }
+}

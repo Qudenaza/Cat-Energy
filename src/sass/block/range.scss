@@ -1,0 +1,35 @@
+.range {
+  display: flex;
+
+  &__left,
+  &__right {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: inherit;
+  }
+
+  &__left {
+    margin-left: 4.4rem;
+    margin-right: 2rem;
+  }
+
+  &__scale {
+    position: relative;
+    margin-top: 5px;
+    margin-right: 1.8rem;
+    height: 1.4rem;
+    width: 8.2rem;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+  }
+
+  &__bar {
+    position: absolute;
+    width: 3.5rem;
+    height: 6px;
+    top: 3px;
+    left: 3px;
+    border-radius: 5px;
+    background: $color-primary;
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+  width: 32rem;
+  margin: 0 auto;
+  padding: 3rem 2rem 0 2rem;
+  text-align: center;
+
+  &__logo-img {
+    width: 12.8rem;
+    height: 2.3rem;
+  }
+
+  &__social {
+    margin-top: 3rem;
+    padding: 2rem 0 2rem 2.5rem;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+  }
+}

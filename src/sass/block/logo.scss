@@ -1,0 +1,12 @@
+.logo {
+  width: 19rem;
+  height: 3.8rem;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
