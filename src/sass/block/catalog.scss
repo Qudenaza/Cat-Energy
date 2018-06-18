@@ -1,0 +1,85 @@
+.catalog {
+  &__more {
+    margin-top: -1px;
+    padding: 0 2rem 2rem 2rem;
+    border: 1px solid #ededed;
+  }
+
+  &__title {
+    margin: 3rem 0 3.2rem 2rem;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+  }
+
+  &__show {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: inherit;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__descr {
+    display: block;
+    margin-top: 0.6rem;
+    font-family: $font-secondary;
+    font-size: 1.2rem;
+    color: grey;
+    text-align: center;
+  }
+
+  &__add-btn {
+    position: relative;
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1.9rem;
+    padding: 2rem 0;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 1rem;
+      left: 13.9rem;
+      width: 2px;
+      height: 2.5rem;
+      background: #d3d3d3;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 2.2rem;
+      left: 12.8rem;
+      width: 2.5rem;
+      height: 2px;
+      background: #d3d3d3;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background: darken(#dedede, 30%);
+    }
+  }
+
+  &__all-btn {
+    margin-top: 2rem;
+    background: #f2f2f2;
+    color: #444444;
+    font-size: 1.6rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background: #cecece;
+    }
+
+    &:active {
+      opacity: 0.6;
+      color: rgba(#444444, 30%);
+    }
+  }
+}

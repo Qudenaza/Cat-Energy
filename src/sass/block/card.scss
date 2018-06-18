@@ -1,0 +1,55 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 2rem 2.1rem 2rem;
+  border: 1px solid #ededed;
+
+  &__image-box {
+    width: 50%;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__wrapper {
+    width: 50%;
+    padding-top: 2rem;
+  }
+
+  &__title {
+    display: block;
+    font-weight: inherit;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03rem;
+
+    &--weight {
+      margin-top: -3px;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    margin: 1rem 0 0 1px;
+    border-collapse: collapse;
+  }
+
+  &__cell {
+    font-size: 1.1rem;
+    line-height: 1.4;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: -2px;
+    font-size: 1.5rem;
+  }
+}
+
+
