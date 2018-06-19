@@ -1,0 +1,275 @@
+.form {
+  padding: 2rem 0 0.6rem 0;
+
+  &__title {
+    margin: 3rem 0 0 2rem;
+  }
+
+  &__info {
+    margin: 3rem 2rem 0 2rem;
+    width: 84%;
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    padding-top: 4rem;
+  }
+
+  &__cat-data {
+    padding: 0 2rem 2.3rem 2rem;
+    border: none;
+  }
+
+  &__cat-name {
+    margin-bottom: 1.5rem;
+  }
+
+  &__cat-weight {
+    margin-bottom: 1.5rem;
+  }
+
+  &__cat-title {
+    margin-right: 1.7rem;
+    white-space: nowrap;
+
+    &--margin {
+      margin-right: 2rem;
+    }
+
+    &--phone {
+      margin-right: 1.2rem;
+    }
+
+    &--mail {
+      margin-right: 1.4rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.8rem 4rem 1.2rem 1.2rem;
+    border: 1px solid #e6e6e6;
+    letter-spacing: 0.07rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: #434343;
+    text-transform: uppercase;
+    transition: border 0.2s;
+
+    &:hover {
+      border-color: #cecece;
+    }
+
+    &:focus {
+      outline: 2px solid #222222;
+
+      & + .form__phone-icon path,
+      & + .form__mail-icon path {
+        fill: $color-primary;
+      }
+    }
+
+    &:focus:invalid {
+      outline: 2px solid #ff8383;
+
+      & + .form__phone-icon path,
+      & + .form__mail-icon path {
+        fill: #ff8383;
+      }
+    }
+  }
+
+  &__cat-diet {
+    padding: 2rem;
+    border: 1px solid #e6e6e6;
+  }
+
+  &__weight {
+    margin-bottom: 1.3rem;
+  }
+
+  &__control {
+    position: relative;
+    margin-right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+
+    &:hover {
+      border-color: #cecece;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__radio {
+    display: none;
+
+    &:checked + .form__control::after {
+      content: "";
+      position: absolute;
+      width: 1.3rem;
+      height: 1.3rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: $color-primary;
+    }
+  }
+
+  &__owner {
+    padding: 0 2rem 0 2rem;
+    margin-top: 1.3rem;
+    border: none;
+  }
+
+  &__block-title {
+    position: relative;
+    margin-bottom: 3.3rem;
+    line-height: 1.1;
+    font-weight: inherit;
+    font-size: 2.4rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1.6rem;
+      right: -12rem;
+      width: 10rem;
+      height: 3px;
+      background: $color-primary;
+    }
+
+    &--comment {
+      margin-left: 2rem;
+
+      &::after {
+        width: 15.8rem;
+        right: -18rem;
+      }
+    }
+
+    &--extra::after {
+      width: 13.6rem;
+      right: -16rem;
+    }
+  }
+
+  &__mail {
+    position: relative;
+    margin-bottom: 1.4rem;
+  }
+
+  &__mail-icon {
+    position: absolute;
+    width: 1.7rem;
+    height: 1.3rem;
+    top: 0.9rem;
+    right: 1.6rem;
+  }
+
+  &__phone {
+    position: relative;
+  }
+
+  &__phone-icon {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    right: 1.3rem;
+    top: 1.3rem;
+  }
+
+  &__comment {
+    margin-top: 2.8rem;
+    border: none;
+  }
+
+  &__textarea {
+    width: 88%;
+    height: 15rem;
+    margin-left: 2rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #434343;
+    border: 1px solid #e6e6e6;
+
+    &:hover {
+      border-color: #cecece;
+    }
+
+    &:focus {
+      outline: 2px solid #222222;
+    }
+  }
+
+  &__extra {
+    margin-top: 2.5em;
+    padding: 0 2rem 0 2rem;
+    border: none;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked + .form__checkbox-control::after {
+      content: "";
+      position: absolute;
+      width: 2.1rem;
+      height: 1.5rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../img/icon-tick.svg") no-repeat;
+    }
+  }
+
+  &__checkbox-control {
+    position: relative;
+    margin-right: 1.6rem;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #cecece;
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  &__container label {
+    margin-bottom: 1.2rem;
+  }
+
+  &__send {
+    padding: 2rem;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: 3px;
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: none;
+  }
+
+  &__notice {
+    display: block;
+    margin-top: 1.8rem;
+    text-align: center;
+  }
+}
+
