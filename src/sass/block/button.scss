@@ -1,10 +1,11 @@
 .button {
   display: block;
-  padding: 1rem;
+  padding: 1.3rem 2rem 1.3rem 2rem;
+  font-size: 1.4rem;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  font-size: 1.4rem;
   color: #ffffff;
   background: $color-primary;
 
@@ -15,5 +16,12 @@
   &:active {
     background: darken($color-primary, 6%);
     color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 1.6rem 2rem;
+    font-size: 2rem;
   }
 }

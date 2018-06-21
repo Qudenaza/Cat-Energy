@@ -1,25 +1,30 @@
 .user-nav {
-  padding-right: 2rem;
+  position: relative;
+  padding: 1rem 2rem 1.4rem 2rem;
 
   &__toggle {
+    float: right;
+    width: 2.4rem;
+    height: 1.8rem;
+    margin-top: 1.2rem;
     border: none;
+    background: url("../img/icon-mobile-menu.svg");
     cursor: pointer;
-    transition: all 0.2s;
   }
 
   &__list {
     position: absolute;
     left: 0;
-    top: 6.3rem;
+    top: 6.5rem;
     width: 100%;
     text-align: center;
+    list-style: none;
     background: #ffffff;
+    transition: all 0.2s;
   }
 
   &__item {
-    padding: 1.8rem;
-    text-transform: uppercase;
-    list-style: none;
+    padding: 2rem 2rem 1.6rem 2rem;
     border-bottom: 1px solid #cecece;
   }
 
@@ -27,6 +32,7 @@
     position: relative;
     font-size: 1.9rem;
     font-weight: 600;
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
     color: #000000;
     text-decoration: none;
@@ -35,9 +41,9 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -6px;
-      height: 2px;
+      bottom: -9px;
       width: 100%;
+      height: 2px;
       background: $color-primary;
     }
 
@@ -54,12 +60,6 @@
     }
   }
 
-  &--closed &__toggle {
-    width: 2.4rem;
-    height: 1.8rem;
-    background: url("../img/icon-mobile-menu.svg");
-  }
-
   &--opened &__toggle {
     width: 1.8rem;
     height: 1.8rem;
@@ -67,28 +67,75 @@
   }
 }
 
-.user-nav--closed .user-nav__list {
-  display: none;
+
+@media (max-width: $tablet-width) {
+  .user-nav {
+    &--closed &__list {
+      display: none;
+    }
+
+    &--opened &__list {
+      display: block;
+      animation: OpenMenu ease 0.4s;
+      animation-iteration-count: 1;
+      transform-origin: 50% 50%;
+      animation-fill-mode: forwards;
+    }
+
+    &--nojs &__toggle {
+      display: none;
+    }
+
+    &--nojs &__list {
+      display: block;
+    }
+  }
 }
 
-.user-nav--opened .user-nav__list {
-  display: block;
-  animation: OpenMenu ease 1s;
-  animation-iteration-count: 1;
-  transform-origin: 50% 50%;
-  animation-fill-mode: forwards;
+@media (min-width: $tablet-width) {
+  .user-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.4rem 3rem;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: auto;
+    }
+
+    &__item {
+      padding: 0;
+      border: none;
+
+      &:not(:last-child) {
+        margin-right: 3.5rem;
+      }
+    }
+
+    &__link {
+      font-weight: inherit;
+      letter-spacing: -0.05rem;
+    }
+  }
 }
 
-.user-nav--nojs .user-nav__toogle {
-  display: none;
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    padding-top: 5.4rem;
+    padding-left: 3.4rem;
+  }
 }
 
-.user-nav--nojs .user-nav__list {
-  display: block;
-}
-
-
-@keyframes OpenMenu {
+@keyframes OpenMenu { // Анимация только для меню
   0% {
     opacity: 0;
     transform: translate(0, -25px);
