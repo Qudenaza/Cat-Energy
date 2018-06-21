@@ -1,6 +1,7 @@
 .user-nav {
   position: relative;
   padding: 1rem 2rem 1.4rem 2rem;
+  background: #ffffff;
 
   &__toggle {
     float: right;
@@ -130,8 +131,45 @@
 
 @media (min-width: $desktop-width) {
   .user-nav {
-    padding-top: 5.4rem;
-    padding-left: 3.4rem;
+    width: 144rem;
+    margin: 0 auto;
+    padding: 5.4rem 11rem 5rem 11rem;
+    background: transparent;
+
+    &__list {
+      margin-top: 2px;
+      background: transparent;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 3.4rem;
+      }
+    }
+
+    &__link {
+      font-size: 2rem;
+      color: #ffffff;
+      letter-spacing: 0;
+      transition: all 0.2s;
+
+      &:hover {
+        color: rgba(256, 256, 256, 0.6);
+      }
+
+      &:active {
+        color: rgba(256, 256, 256, 0.3);
+      }
+
+      &--active:active,
+      &--active:hover {
+        color: #ffffff;
+      }
+
+      &--active::after {
+        background: #ffffff;
+      }
+    }
   }
 }
 

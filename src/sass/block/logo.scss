@@ -11,17 +11,3 @@
     opacity: 0.7;
   }
 }
-
-@media (min-width: $tablet-width) {
-  .logo {
-    width: 17.2rem;
-    height: 5.7rem;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .logo {
-    width: 20.2rem;
-    height: 5.9rem;
-  }
-}

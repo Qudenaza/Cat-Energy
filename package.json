@@ -15,7 +15,7 @@
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
-    "gulp-pretty-html": "^2.0.9",
+    "gulp-pretty-html": "2.0.9",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "4.0.x",
     "gulp-svgstore": "^6.1.1",
@@ -24,8 +24,7 @@
     "posthtml-include": "^1.1.0",
     "run-sequence": "^2.2.1",
     "stylelint": "9.2.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "gulp-pretty-html": "2.0.9"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

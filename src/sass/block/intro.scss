@@ -1,8 +1,9 @@
 .intro {
+  width: 32rem;
+  margin: 0 auto;
   padding: 2.6rem 2rem 2rem 2rem;
   text-align: center;
   color: #ffffff;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
 
   &__title {
     font-size: 3.6rem;
@@ -21,12 +22,11 @@
 
 @media (min-width: $tablet-width) {
   .intro {
+    width: 76.8em;
     position: relative;
-    min-height: 85rem;
-    padding: 3.4rem 3rem 3rem 3rem;
+    padding: 3.4rem 3rem 3rem 11.8rem;
     color: #111111;
     text-align: left;
-    margin-left: 8.8rem;
     background: transparent;
 
     &__title {
@@ -44,13 +44,31 @@
       position: absolute;
       z-index: 1;
       top: 23.6rem;
-      left: -5.9rem;
+      right: 3rem;
     }
 
     &__button {
       position: relative;
       z-index: 10;
       width: 24.6rem;
+    }
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .intro {
+    width: 144rem;
+    padding-top: 5.8rem;
+    padding-left: 19rem;
+
+    &__slogan {
+      margin-bottom: 4.8rem;
+    }
+
+    &__image {
+      top: -2.1rem;
+      left: 56rem;
     }
   }
 }

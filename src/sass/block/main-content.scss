@@ -1,4 +1,16 @@
 .main-content {
-  width: 32rem;
+  min-width: 32rem;
   margin: 0 auto;
+
+  &--index {
+    margin-top: 19.5rem;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-content {
+    &--index {
+      margin-top: 0;
+    }
+  }
 }

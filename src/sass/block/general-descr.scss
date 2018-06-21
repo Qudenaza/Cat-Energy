@@ -1,7 +1,11 @@
 .general-descr {
   font-family: $font-secondary;
   font-size: 1.3rem;
-  color: #808080;
-  line-height: 1.8rem;
-  letter-spacing: 0.06rem;
+  color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .general-descr {
+    font-size: 1.6rem;
+  }
 }
